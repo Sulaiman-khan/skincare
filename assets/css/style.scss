@@ -313,3 +313,21 @@ footer{
         display: none;
     }
 }
+
+.ser-detail{
+    .detail-img{
+        height: 500px;
+
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.ser-testmonials{
+    margin-top: inherit !important;
+    &::before{
+        border-radius: 0px 30px 30px 0px;
+        left: 0;
+    }
+}

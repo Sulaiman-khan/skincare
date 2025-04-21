@@ -309,4 +309,21 @@ footer .links a {
 
 .ser-pg::before {
   display: none;
+}
+
+.ser-detail .detail-img {
+  height: 500px;
+}
+.ser-detail .detail-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ser-testmonials {
+  margin-top: inherit !important;
+}
+.ser-testmonials::before {
+  border-radius: 0px 30px 30px 0px;
+  left: 0;
 }/*# sourceMappingURL=style.css.map */
