@@ -18,9 +18,32 @@ var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 50,
       },
+      // 1280: {
+      //   slidesPerView: 4,
+      //   spaceBetween: 50,
+      // },
+    },
+  });
+var swiper = new Swiper(".myTeam", {
+    autoplay: true,
+    loop: true,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
       1280: {
         slidesPerView: 4,
-        spaceBetween: 50,
       },
     },
   });
