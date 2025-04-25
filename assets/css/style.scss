@@ -36,9 +36,39 @@ $secondary:#fff5f5;
 .hd-font{
     font-family: "Playfair Display", serif !important;
 }
-#navbarSupportedContent{
-    z-index: 999;
-    background-color: #ffffff;
+nav{
+    .show{
+        z-index: 999;
+        background-color: #ffffff;
+    }
+}
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: $primary;
+    .marquee {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 25s linear infinite;
+    }
+    @keyframes marquee{
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}
+.top-leaf{
+    position: absolute;
+    top: 0%;
+    left: 37%;
+    transform: translate(-50%, 0%);
+    width: 120px;
+    rotate: -180deg;
 }
 .hero{
     height: calc(100vh - 200px);
@@ -64,14 +94,7 @@ $secondary:#fff5f5;
     rotate: -180deg;
     transform: scaleY(-1);
 }
-.leaf2{
-    position: absolute;
-    top: -22%;
-    left: 35%;
-    transform: translate(-50%, 0%);
-    width: 120px;
-    rotate: -180deg;
-}
+
 .leaf3{
     position: absolute;
     bottom: 0px;

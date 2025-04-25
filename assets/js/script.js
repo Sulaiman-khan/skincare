@@ -1,3 +1,19 @@
+    // marquee
+    document.addEventListener('DOMContentLoaded', function() {
+      const marquee = document.getElementById('marquee');
+  
+      marquee.addEventListener('mouseover', function() {
+          marquee.style.animationPlayState = 'paused';
+      });
+  
+      marquee.addEventListener('mouseleave', function() {
+          marquee.style.animationPlayState = 'running';
+      });
+  });
+  
+  // marquee
+
+
 var swiper = new Swiper(".mySwiper", {
     autoplay: true,
     loop: true,
